@@ -21,11 +21,11 @@ h2 {
   width: 100%;
 }
 
-.info-right {
+.arrow-down {
   color: white;
 }
 
-.info-right::after, .info-right::before {
+.map-info-arrow-down::after, .map-info-arrow-down::before {
   position: absolute;
   content: '';
   width: 100px;
@@ -35,12 +35,32 @@ h2 {
   z-index: 100;
 }
 
-.info-right::before {
+.map-info-arrow-down::before {
   right: 50%;
   transform: skew(0, 25deg);
 }
 
-.info-right::after {
+.map-info-arrow-down::after {
+  left: 50%;
+  transform: skew(0, -25deg);
+}
+
+.project-desc-arrow-down::after, .project-desc-arrow-down::before {
+  position: absolute;
+  content: '';
+  width: 60px;
+  height: 60px;
+  background: #8ccbbe;
+  bottom: -4em;
+  z-index: 0;
+}
+
+.project-desc-arrow-down::before {
+  right: 50%;
+  transform: skew(0, 25deg);
+}
+
+ .project-desc-arrow-down::after {
   left: 50%;
   transform: skew(0, -25deg);
 }
@@ -51,13 +71,13 @@ h2 {
 }
 
 .profile h2 {
-  font-size: 42px;
+  font-size: 36px;
   font-style: italic;
   padding-bottom: 5px;
 }
 
 .profile p {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .image-right {
@@ -72,4 +92,13 @@ h2 {
   float: right;
   height: 100%;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 25% 100%);
+}
+
+.project-page {
+  color: white;
+}
+
+.project-section {
+  padding-left: 30px;
+  padding-right: 100px;
 }
