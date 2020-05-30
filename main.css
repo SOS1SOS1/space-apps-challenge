@@ -3,15 +3,22 @@
 }
 
 .navbar {
-  background-color: #3797a4 !important;
+  background-color: #ffffff !important;
 }
 
 .navbar-brand {
-  color: #e4e4e4 !important;
+  color: #3797a4 !important;
 }
 
 h2 {
+  margin-top: 10px;
+}
 
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .info-right::after, .info-right::before {
@@ -32,4 +39,20 @@ h2 {
 .info-right::after {
   left: 50%;
   transform: skew(0, -25deg);
+}
+
+.profile-name {
+  color: white;
+  padding-left: 20px;
+}
+
+.profile-desc {
+  color: white;
+  padding-left: 20px;
+}
+
+.profile-image {
+  height: 300px;
+  clip-path: circle(45%);
+  /* clip-path: polygon(0 0, 100% 0, 100%, 100%, 0 90%); */
 }
