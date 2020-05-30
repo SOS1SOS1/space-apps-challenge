@@ -41,18 +41,36 @@ h2 {
   transform: skew(0, -25deg);
 }
 
-.profile-name {
+.profile {
   color: white;
+}
+
+.profile h2 {
+  font-size: 42px;
+  font-style: italic;
+  padding-bottom: 5px;
+}
+
+.profile p {
+  font-size: 18px;
+}
+
+.profile-left {
   padding-left: 20px;
 }
 
-.profile-desc {
-  color: white;
-  padding-left: 20px;
+.profile-right {
+  padding-right: 20px;
 }
 
-.profile-image {
-  height: 300px;
-  clip-path: circle(45%);
-  /* clip-path: polygon(0 0, 100% 0, 100%, 100%, 0 90%); */
+.profile-right img {
+  float: left;
+  height: 100%;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 0% 100%);
+}
+
+.profile-left img {
+  float: right;
+  height: 100%;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
