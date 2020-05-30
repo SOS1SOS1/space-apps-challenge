@@ -28,10 +28,10 @@ h2 {
 .map-info-arrow-down::after, .map-info-arrow-down::before {
   position: absolute;
   content: '';
-  width: 100px;
-  height: 100px;
-  background: #8ccbbe;
-  bottom: -.5em;
+  width: 75px;
+  height: 75px;
+  background: #e4e4e4;
+  bottom: -0.5em;
   z-index: 100;
 }
 
@@ -45,14 +45,23 @@ h2 {
   transform: skew(0, -25deg);
 }
 
+.challenge-name {
+  background-color: #fcf876;
+  color: #7d7d7d;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
 .project-desc-arrow-down::after, .project-desc-arrow-down::before {
   position: absolute;
   content: '';
-  width: 60px;
-  height: 60px;
+  width: 75px;
+  height: 75px;
   background: #8ccbbe;
-  bottom: -4em;
-  z-index: 0;
+  bottom: -0.5em;
+  z-index: 100;
 }
 
 .project-desc-arrow-down::before {
@@ -60,7 +69,7 @@ h2 {
   transform: skew(0, 25deg);
 }
 
- .project-desc-arrow-down::after {
+.project-desc-arrow-down::after {
   left: 50%;
   transform: skew(0, -25deg);
 }
@@ -98,7 +107,6 @@ h2 {
   color: white;
 }
 
-.project-section {
-  padding-left: 30px;
-  padding-right: 100px;
+.section {
+  padding: 50px 100px 50px 30px;
 }
