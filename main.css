@@ -21,12 +21,16 @@ h2 {
   width: 100%;
 }
 
+.info-right {
+  color: white;
+}
+
 .info-right::after, .info-right::before {
   position: absolute;
   content: '';
   width: 100px;
   height: 100px;
-  background: #fcf876;
+  background: #8ccbbe;
   bottom: -.5em;
   z-index: 100;
 }
@@ -43,6 +47,7 @@ h2 {
 
 .profile {
   color: white;
+  padding-left: 20px;
 }
 
 .profile h2 {
@@ -55,22 +60,16 @@ h2 {
   font-size: 18px;
 }
 
-.profile-left {
-  padding-left: 20px;
-}
-
-.profile-right {
-  padding-right: 20px;
-}
-
-.profile-right img {
-  float: left;
-  height: 100%;
-  clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 0% 100%);
-}
-
-.profile-left img {
+.image-right {
+  margin-right: -5px;
   float: right;
   height: 100%;
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.image-left {
+  margin-right: -5px;
+  float: right;
+  height: 100%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 25% 100%);
 }
