@@ -16,12 +16,12 @@
   <body>
     <!-- 3797a4, 8ccbbe, fcf876, e4e4e4 -->
 
-    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" id="nav">
   		<a class="navbar-brand" href="index.html"><strong>Where There's a Link, There's a Way</strong></a>
-  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  			<span class="navbar-toggler-icon"></span>
-  		</button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"> <button class="btn btn-link custom-nav-btn" type="button" onclick="scrollToHome()" name="button">Home<span class="sr-only">(current)</span></button> </li>
           <li class="nav-item"> <button class="btn btn-link custom-nav-btn" type="button" onclick="scrollToArticles()" name="button">Articles</button> </li>
@@ -39,7 +39,7 @@
             <div id="htmlwidget-5c62378eeeb6ff35aced" style="width:100%;height:400px;" class="leaflet html-widget"></div>
           </div>
         </div>
-        <div class="col-md-4 section map-info-arrow-down" style="background-color: #e4e4e4; color: #7d7d7d; height: 400px;">
+        <div id="variables-section" class="col-md-4 section map-info-arrow-down" style="background-color: #e4e4e4; color: #7d7d7d; height: 400px;">
           <h2>Variables</h2>
           <form class="" action="index.html" method="post">
             <div class="form-check">
@@ -61,8 +61,8 @@
       <!-- relevant articles -->
       <div id="articles-section" class="row section-heading" style="background-color: #fcf876;">
         <div class="col-md-1"> </div>
-        <div class="col">
-          <div class="row align-items-center">
+        <div class="col-md-11 col-xs-12" >
+          <div class="row align-items-center" style="height: 100px;">
             <h1>Articles</h1>
           </div>
         </div>
@@ -72,14 +72,31 @@
         <div class="col">
           <p>add relevant articles on environmental factors, possibly with the help of web scraping</p>
           <!-- https://www.ncbi.nlm.nih.gov/research/coronavirus/ -->
+
+          <div class="news-article">
+            <a href="https://www.cnn.com/2020/04/09/politics/airline-passengers-decline/index.html"></a>
+          </div>
+          <div class="news-article">
+            <a href="https://www.businessinsider.com/air-traffic-during-coronavirus-pandemic-changes-effects-around-the-world-2020-4"></a>
+          </div>
+
+
+          <!-- relevant articles -->
+          <!--
+            https://www.nasa.gov/feature/goddard/2020/drop-in-air-pollution-over-northeast
+            https://www.nasa.gov/feature/goddard/2020/nasa-satellite-data-show-air-pollution-decreases-over-southwest-us-cities
+            https://www.nytimes.com/2020/04/07/climate/air-pollution-coronavirus-covid.html
+            https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2020GL087978
+            https://www.sciencedirect.com/science/article/pii/S0048969720325298
+          -->
         </div>
       </div>
 
       <!-- project description -->
       <div id="project-section" class="row section-heading" style="background-color: #fcf876;">
         <div class="col-md-1"> </div>
-        <div class="col">
-          <div class="row align-items-center">
+        <div class="col-md-11 col-xs-12" >
+          <div class="row align-items-center" style="height: 100px;">
             <h1>Coronavision</h1>
           </div>
         </div>
@@ -123,148 +140,148 @@
       <!-- meet the team -->
       <div id="team-section" class="row section-heading" style="background-color: #fcf876;">
         <div class="col-md-1"> </div>
-        <div class="col">
-          <div class="row align-items-center">
+        <div class="col-md-11 col-xs-12" >
+          <div class="row align-items-center" style="height: 100px;">
             <h1>Code Rage Team</h1>
           </div>
         </div>
       </div>
 
       <!-- Fernando Cervantes Jr. -->
-      <div class="row align-items-center" style="height: 300px;">
-        <div class="col-md-5 team-member" style="background-color: #8ccbbe; height: 300px;">
+      <div class="row align-items-center">
+        <div class="col-lg-5 col-md-6 col-sm-5 col-xs-12 team-member team-member-style-1">
           <div class="row">
             <div class="col"></div>
-            <div class="col-md-8 team-member">
-              <h1>Fernando Cervantes Jr.</h1>
+            <div class="col-md-8 col-sm-10">
+              <h1 style="color: white">Fernando Cervantes Jr.</h1>
             </div>
           </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-lg-5 col-md-6 col-sm-7 col-xs-12">
           <div class="row">
-            <div class="col profile" style="color: #3797a4">
+            <div class="col profile" style="color: #3797a4;">
               <div>
-                <p><strong>Grade: </strong>Incoming Freshman</p>
-                <p><strong>State: </strong>Texas</p>
-                <p><strong>College: </strong>Tufts University</p>
-                <p><strong>Major: </strong>Computer Science</p>
-                <p><strong>Why This Challenge?: </strong>I chose this challenge was to find a way to make all the data and resources being shared more understandable. Covid 19 is a very complex and complicated subject for people to understand and I hope to make that an easier environment in order for people to stay informed and safe.</p>
+                <p><strong>Grade - </strong>Incoming Freshman</p>
+                <p><strong>State - </strong>Texas</p>
+                <p><strong>College - </strong>Tufts University</p>
+                <p><strong>Major - </strong>Computer Science</p>
+                <p><strong>Why This Challenge? - </strong>COVID-19 is a very complex and complicated subject for people to understand, and I hope to make an easier environment in order for people to stay informed and safe.</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-2"></div>
+        <div class="col-lg-2 col-md-0"></div>
       </div>
 
       <!-- Shanti Mickens -->
-      <div class="row align-items-center" style="background-color: #3797a4; height: 300px;">
-        <div class="col-md-5 team-member" style="background-color: white; height: 300px;">
+      <div class="row align-items-center" style="background-color: #3797a4;">
+        <div class="col-lg-5 col-md-6 col-sm-5 col-xs-12 team-member team-member-style-2">
           <div class="row">
             <div class="col"></div>
-            <div class="col-md-8 team-member">
-              <h1 style="color: #8ccbbe">Shanti Mickens</h1>
+            <div class="col-md-8 col-sm-10">
+              <h1>Shanti Mickens</h1>
             </div>
           </div>
         </div>
-        <div class="col-md-5" style="color: white;">
+        <div class="col-lg-5 col-md-6 col-sm-7 col-xs-12" style="color: white;">
           <div class="row">
             <div class="col profile">
               <div>
-                <p><strong>Grade: </strong>Incoming Freshman</p>
-                <p><strong>State: </strong>Idaho</p>
-                <p><strong>College: </strong>Massachusetts Institute of Technology</p>
-                <p><strong>Major: </strong>Computer Science and Engineering</p>
-                <p><strong>Why This Challenge?: </strong>I chose this challenge since many of the resources currently available on covid-19 are very technical and hard for the everyday person to understand.</p>
+                <p><strong>Grade - </strong>Incoming Freshman</p>
+                <p><strong>State - </strong>Idaho</p>
+                <p><strong>College - </strong>Massachusetts Institute of Technology</p>
+                <p><strong>Major - </strong>Computer Science and Engineering</p>
+                <p><strong>Why This Challenge? - </strong>I chose this challenge since many of the resources currently available on covid-19 are very technical and hard for the everyday person to understand.</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-2"></div>
+        <div class="col-lg-2 col-md-0"></div>
       </div>
 
       <!-- Isha Rajput -->
-      <div class="row align-items-center" style="height: 300px;">
-        <div class="col-md-5 team-member" style="background-color: #8ccbbe; height: 300px;">
+      <div class="row align-items-center">
+        <div class="col-lg-5 col-md-6 col-sm-5 col-xs-12 team-member team-member-style-1">
           <div class="row">
             <div class="col"></div>
-            <div class="col-md-8 team-member">
-              <h1>Isha Rajput</h1>
+            <div class="col-md-8 col-sm-10">
+              <h1 style="color: white">Isha Rajput</h1>
             </div>
           </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-lg-5 col-md-6 col-sm-7 col-xs-12">
           <div class="row">
-            <div class="col profile" style="color: #3797a4">
+            <div class="col profile" style="color: #3797a4;">
               <div>
-                <p><strong>Grade: </strong>Incoming Freshman</p>
-                <p><strong>State: </strong>California</p>
-                <p><strong>College: </strong>University of California, Los Angeles</p>
-                <p><strong>Major: </strong>Computer Science</p>
-                <p><strong>Why This Challenge?: </strong>I chose this challenge because I wanted to simplify data into something that is easy to visualize and understand.</p>
+                <p><strong>Grade - </strong>Incoming Freshman</p>
+                <p><strong>State - </strong>California</p>
+                <p><strong>College - </strong>University of California, Los Angeles</p>
+                <p><strong>Major - </strong>Computer Science</p>
+                <p><strong>Why This Challenge? - </strong>I chose this challenge because I wanted to simplify data into something that is easy to visualize and understand.</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-2"></div>
+        <div class="col-lg-2 col-md-0"></div>
       </div>
 
       <!-- Calisa Xu Stevens -->
-      <div class="row align-items-center" style="background-color: #3797a4; height: 300px;">
-        <div class="col-md-5 team-member" style="background-color: white; height: 300px;">
-          <div class="row" style="height: 100%;">
+      <div class="row align-items-center" style="background-color: #3797a4;">
+        <div class="col-lg-5 col-md-6 col-sm-5 col-xs-12 team-member team-member-style-2">
+          <div class="row">
             <div class="col"></div>
-            <div class="col-md-8 team-member">
-              <h1 style="color: #8ccbbe">Calisa Xu Stevens</h1>
+            <div class="col-md-8 col-sm-10">
+              <h1>Calisa Xu Stevens</h1>
             </div>
           </div>
         </div>
-        <div class="col-md-5" style="background-color: #3797a4; color: white;">
+        <div class="col-lg-5 col-md-6 col-sm-7 col-xs-12" style="color: white;">
           <div class="row">
             <div class="col profile">
               <div>
-                <p><strong>Grade: </strong>Incoming Freshman</p>
-                <p><strong>State: </strong>Michigan</p>
-                <p><strong>College: </strong>Michigan State University</p>
-                <p><strong>Major: </strong>Computer Science</p>
-                <p><strong>Why This Challenge?: </strong></p>
+                <p><strong>Grade - </strong>Incoming Freshman</p>
+                <p><strong>State - </strong>Michigan</p>
+                <p><strong>College - </strong>Michigan State University</p>
+                <p><strong>Major - </strong>Computer Science</p>
+                <p><strong>Why This Challenge? - </strong></p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-2"></div>
+        <div class="col-lg-2 col-md-0"></div>
       </div>
 
       <!-- Michael Tang -->
-      <div class="row align-items-center" style="height: 300px;">
-        <div class="col-md-5 team-member" style="background-color: #8ccbbe; height: 300px;">
-          <div class="row" style="height: 100%;">
+      <div class="row align-items-center">
+        <div class="col-lg-5 col-md-6 col-sm-5 col-xs-12 team-member team-member-style-1">
+          <div class="row">
             <div class="col"></div>
-            <div class="col-md-8 team-member">
-              <h1>Michael Tang</h1>
+            <div class="col-md-8 col-sm-10">
+              <h1 style="color: white">Michael Tang</h1>
             </div>
           </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-lg-5 col-md-6 col-sm-7 col-xs-12">
           <div class="row">
-            <div class="col profile " style="color: #3797a4">
+            <div class="col profile" style="color: #3797a4;">
               <div>
-                <p><strong>Grade: </strong>Incoming Freshman</p>
-                <p><strong>State: </strong>California</p>
-                <p><strong>College: </strong>Princeton University</p>
-                <p><strong>Major: </strong>Undeclared</p>
-                <p><strong>Why This Challenge?: </strong></p>
+                <p><strong>Grade - </strong>Incoming Freshman</p>
+                <p><strong>State - </strong>California</p>
+                <p><strong>College - </strong>Princeton University</p>
+                <p><strong>Major - </strong>Undeclared</p>
+                <p><strong>Why This Challenge? - </strong></p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-2"> </div>
+        <div class="col-lg-2 col-md-0"></div>
       </div>
 
       <!-- data -->
       <div id="data-section" class="row section-heading" style="background-color: #fcf876;">
         <div class="col-md-1"> </div>
-        <div class="col">
-          <div class="row align-items-center">
+        <div class="col-md-11 col-xs-12" >
+          <div class="row align-items-center" style="height: 100px;">
             <h1>Data Sources</h1>
           </div>
         </div>
@@ -273,6 +290,9 @@
       <div class="row" style="height: 200px;">
         <div class="col">
           <p>add links to all data sources used w/ explanation of what they were used for</p>
+
+          <!-- case count heatmap data -->
+          <!-- https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200531-covid-19-sitrep-132.pdf?sfvrsn=d9c2eaef_2 -->
         </div>
       </div>
 
@@ -280,9 +300,13 @@
 
     <script type="text/javascript">
 
+      function addScrollPadding() {
+        document.querySelector('html').setAttribute("style", "scroll-padding-top: " + document.getElementById("nav").clientHeight + "px;");
+      }
+
       function scrollToHome() {
-        var my_element = document.getElementById("htmlwidget_container");
-        my_element.scrollIntoView({
+        addScrollPadding();
+        document.getElementById("htmlwidget_container").scrollIntoView({
           behavior: "smooth",
           block: "start",
           inline: "nearest"
@@ -290,8 +314,8 @@
       }
 
       function scrollToArticles() {
-        var my_element = document.getElementById("articles-section");
-        my_element.scrollIntoView({
+        addScrollPadding();
+        document.getElementById("articles-section").scrollIntoView({
           behavior: "smooth",
           block: "start",
           inline: "nearest"
@@ -299,8 +323,8 @@
       }
 
       function scrollToProject() {
-        var my_element = document.getElementById("project-section");
-        my_element.scrollIntoView({
+        addScrollPadding();
+        document.getElementById("project-section").scrollIntoView({
           behavior: "smooth",
           block: "start",
           inline: "nearest"
@@ -308,8 +332,8 @@
       }
 
       function scrollToTeam() {
-        var my_element = document.getElementById("team-section");
-        my_element.scrollIntoView({
+        addScrollPadding();
+        document.getElementById("team-section").scrollIntoView({
           behavior: "smooth",
           block: "start",
           inline: "nearest"
@@ -317,8 +341,8 @@
       }
 
       function scrollToData() {
-        var my_element = document.getElementById("data-section");
-        my_element.scrollIntoView({
+        addScrollPadding();
+        document.getElementById("data-section").scrollIntoView({
           behavior: "smooth",
           block: "start",
           inline: "nearest"

@@ -13,6 +13,7 @@ html {
 
 .navbar-brand {
   color: #3797a4 !important;
+  padding-left: 1em !important;
 }
 
 .custom-nav-btn {
@@ -60,19 +61,6 @@ h2 {
   transform: skew(0, -25deg);
 }
 
-.section-heading {
-  background-color: #fcf876;
-  color: #7d7d7d;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.section-heading div {
-  height: 100px;
-}
-
 .project-desc-arrow-down::after, .project-desc-arrow-down::before {
   position: absolute;
   content: '';
@@ -96,6 +84,12 @@ h2 {
 .profile {
   padding: 15px 15px 15px 30px;
   display: flex;
+  height: 300px;
+}
+
+.profile div {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .profile h2 {
@@ -129,10 +123,17 @@ h2 {
   align-items: center;
   background-size: cover !important;
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  height: 300px;
 }
 
-.team-member h1 {
+.team-member-style-1 {
+  background-color: #8ccbbe;
   color: white;
+}
+
+.team-member-style-2 {
+  background-color: white;
+  color: #8ccbbe;
 }
 
 .team-member div::after {
@@ -154,11 +155,28 @@ h2 {
   background-size: cover;
 }
 
-/* @media screen and (max-width: 1200px) {
-    .image-right {
-        display: none !important;
+@media screen and (max-width: 576px) {
+    .team-member {
+      height: 150px;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      text-align: center;
+      background-color: #8ccbbe !important;
+      color: white;
     }
-} */
+    .profile {
+      background-color: white;
+      color: #3797a4;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-heading {
+      padding-left: 30px;
+    }
+    #variables-section {
+      height: 250px !important;
+    }
+}
 
 .project-page {
   color: white;
@@ -166,4 +184,17 @@ h2 {
 
 .section {
   padding: 50px 0px 80px 50px;
+}
+
+.section-heading {
+  background-color: #fcf876;
+  color: #7d7d7d;
+  max-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-heading div {
+  /* height: 100px; */
 }
