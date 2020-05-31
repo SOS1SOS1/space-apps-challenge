@@ -195,6 +195,31 @@ h2 {
   justify-content: center;
 }
 
-.section-heading div {
-  /* height: 100px; */
+.article {
+  padding: 20px;
+  margin: 15px 0px;
+  border-radius: 10px;
+}
+
+.article-topic {
+  font-size: 22px;
+}
+
+.article-author {
+  font-size: 18px;
+}
+
+.article-date {
+  font-size: 15px;
+}
+
+.article-link {
+  height: 16px;
+  margin-bottom: 5px;
+}
+
+.data-source {
+  padding: 20px;
+  margin: 15px 20px;
+  border-radius: 10px;
 }
