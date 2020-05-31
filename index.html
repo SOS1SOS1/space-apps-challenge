@@ -14,31 +14,32 @@
     <title>Code Rage</title>
   </head>
   <body>
+    <!-- 3797a4, 8ccbbe, fcf876, e4e4e4 -->
 
     <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
-  		<a class="navbar-brand" href="index.html"><strong>Coronavision</strong></a>
+  		<a class="navbar-brand" href="index.html"><strong>Where There's a Link, There's a Way</strong></a>
   		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
   			<span class="navbar-toggler-icon"></span>
   		</button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"> <a class="nav-link" href="">Home<span class="sr-only">(current)</span></a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#project-section">Project Description</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#about-us-section">About Us</a> </li>
+          <li class="nav-item"> <button class="btn btn-link custom-nav-btn" type="button" onclick="scrollToHome()" name="button">Home<span class="sr-only">(current)</span></button> </li>
+          <li class="nav-item"> <button class="btn btn-link custom-nav-btn" type="button" onclick="scrollToArticles()" name="button">Articles</button> </li>
+          <li class="nav-item"> <button class="btn btn-link custom-nav-btn" type="button" onclick="scrollToProject()" name="button">Project Description</button> </li>
+          <li class="nav-item"> <button class="btn btn-link custom-nav-btn" type="button" onclick="scrollToTeam()" name="button">Meet the Team</button> </li>
+          <li class="nav-item"> <button class="btn btn-link custom-nav-btn" type="button" onclick="scrollToData()" name="button">Data Sources</button> </li>
         </ul>
       </div>
   	</nav>
 
     <div class="container-fluid">
-      <div class="row" style="height: 400px;">
-        <div class="col-md-8" style="padding: 0px;">
-          <!-- <div id="map"></div> -->
-          <!-- <iframe src="" width="" height=""></iframe> -->
+      <div class="row">
+        <div class="col-md-8" style="padding: 0px; height: 400px;">
           <div id="htmlwidget_container">
             <div id="htmlwidget-5c62378eeeb6ff35aced" style="width:100%;height:400px;" class="leaflet html-widget"></div>
           </div>
         </div>
-        <div class="col-md-4 section map-info-arrow-down" style="background-color: #e4e4e4; color: #7d7d7d;">
+        <div class="col-md-4 section map-info-arrow-down" style="background-color: #e4e4e4; color: #7d7d7d; height: 400px;">
           <h2>Variables</h2>
           <form class="" action="index.html" method="post">
             <div class="form-check">
@@ -56,48 +57,93 @@
           </form>
         </div>
       </div>
-      <div id="project-section" class="row challenge-name" style="">
+
+      <!-- relevant articles -->
+      <div id="articles-section" class="row section-heading" style="background-color: #fcf876;">
+        <div class="col-md-1"> </div>
         <div class="col">
-          <h1>Where There's a Link, There's a Way</h1>
+          <div class="row align-items-center">
+            <h1>Articles</h1>
+          </div>
         </div>
       </div>
-      <div class="row project-page" style="background-color: #e4e4e4;">
-        <div class="col-md-4 section" style="background-color: #3797a4; padding-right: 50px; padding-left: 70px;">
-          <h2>Overview</h2>
-          <p>In today's world, thanks to the Internet there is so much information available at our fingertips that many people don't know what to do with it. There is so much to look at that it becomes overwhelming and hard to comprehend.</p>
-          <p>The goal of Coronavision is to take these data and simplify down for the end user, so that any average Joe can understand what is going on around the world with COVID-19.</p>
+
+      <div class="row" style="height: 200px;">
+        <div class="col">
+          <p>add relevant articles on environmental factors, possibly with the help of web scraping</p>
+          <!-- https://www.ncbi.nlm.nih.gov/research/coronavirus/ -->
         </div>
-        <div class="col-md-8">
+      </div>
+
+      <!-- project description -->
+      <div id="project-section" class="row section-heading" style="background-color: #fcf876;">
+        <div class="col-md-1"> </div>
+        <div class="col">
+          <div class="row align-items-center">
+            <h1>Coronavision</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center project-page" style="background-color: #e4e4e4;">
+        <div class="col-md-5 section" style="background-color: #3797a4; padding-right: 50px; padding-left: 70px;">
+          <div class="row">
+            <div class="col"> </div>
+            <div class="col-md-10">
+              <h2>Overview</h2>
+              <p>In today's world, thanks to the Internet there is so much information available at our fingertips that many people don't know what to do with it. There is so much to look at that it becomes overwhelming and hard to comprehend.</p>
+              <p>The goal of Coronavision is to take these data and simplify down for the end user, so that any average Joe can understand what is going on around the world with COVID-19.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7">
           <div class="row" style="background-color: #8ccbbe;">
             <div class="col section project-desc-arrow-down">
-              <h2>Description</h2>
-              <p>To make the vast amount of information easier to comphrehend, Coronavision takes in several data sources and outputs them in a user-friendly format by providing a visual of a globe with hotspots that shows the environmental aspects affecting the spread of COVID-19.</p>
+              <div class="row">
+                <div class="col-md-10">
+                  <h2>Description</h2>
+                  <p>To make the vast amount of information easier to comphrehend, Coronavision takes in several data sources and outputs them in a user-friendly format by providing a visual of a globe with hotspots that shows the environmental aspects affecting the spread of COVID-19.</p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="row" style="background-color: #e4e4e4; color: #7d7d7d;">
             <div class="col section">
-              <h2>Development Process</h2>
-              <p>What governed our group to choose this subject was the idea that during this critical moment, finding accessible and straightforward information can come across as difficult due to the large number of technical, hard to read sites. To do so, we began by brainstorming ideas for what could make digesting all the information available easier. After that, we consolidated our ideas into one, Coronavision. By combining our team member's website development skills and utilizing Leaflet and Mapbox to create the mapping platform, we were able to design a user-friendly site that showcases the environmental aspects that are affecting the COVID-19 spread. </p>
+              <div class="row">
+                <div class="col-md-10">
+                  <h2>Development Process</h2>
+                  <p>What governed our group to choose this subject was the idea that during this critical moment, finding accessible and straightforward information can come across as difficult due to the large number of technical, hard to read sites. To do so, we began by brainstorming ideas for what could make digesting all the information available easier. After that, we consolidated our ideas into one, Coronavision. By combining our team member's website development skills and utilizing Leaflet and Mapbox to create the mapping platform, we were able to design a user-friendly site that showcases the environmental aspects that are affecting the COVID-19 spread. </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- 3797a4, 8ccbbe, fcf876 -->
-      <div id="about-us-section" class="row challenge-name" style="">
+
+      <!-- meet the team -->
+      <div id="team-section" class="row section-heading" style="background-color: #fcf876;">
+        <div class="col-md-1"> </div>
         <div class="col">
-          <h1>Meet the Team</h1>
+          <div class="row align-items-center">
+            <h1>Code Rage Team</h1>
+          </div>
         </div>
       </div>
-      <div>
-        <!-- Fernando Cervantes Jr. -->
-        <div class="row" style="min-height: 300px;">
-          <div class="col-md-4 team-member" style="background-color: #8ccbbe;">
-            <h1>Fernando Cervantes Jr.</h1>
-            <!-- <div style="background-image: url('./images/shantim.jpg');"></div> -->
+
+      <!-- Fernando Cervantes Jr. -->
+      <div class="row align-items-center" style="height: 300px;">
+        <div class="col-md-5 team-member" style="background-color: #8ccbbe; height: 300px;">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col-md-8 team-member">
+              <h1>Fernando Cervantes Jr.</h1>
+            </div>
           </div>
-          <div class="col-md-8">
-            <div class="row">
-              <div class="col profile" style="color: #3797a4">
+        </div>
+        <div class="col-md-5">
+          <div class="row">
+            <div class="col profile" style="color: #3797a4">
+              <div>
                 <p><strong>Grade: </strong>Incoming Freshman</p>
                 <p><strong>State: </strong>Texas</p>
                 <p><strong>College: </strong>Tufts University</p>
@@ -107,90 +153,179 @@
             </div>
           </div>
         </div>
+        <div class="col-md-2"></div>
       </div>
 
       <!-- Shanti Mickens -->
-      <div class="row" style="min-height: 300px;">
-        <div class="col-md-4 team-member">
-          <h1 style="color: #8ccbbe">Shanti Mickens</h1>
-          <!-- <div style="background-image: url('./images/shantim.jpg');"></div> -->
-        </div>
-        <div class="col-md-8" style="background-color: #3797a4; color: white;">
+      <div class="row align-items-center" style="background-color: #3797a4; height: 300px;">
+        <div class="col-md-5 team-member" style="background-color: white; height: 300px;">
           <div class="row">
-            <div class="col profile">
-              <p><strong>Grade: </strong>Incoming Freshman</p>
-              <p><strong>State: </strong>Idaho</p>
-              <p><strong>College: </strong>Massachusetts Institute of Technology</p>
-              <p><strong>Major: </strong>Computer Science and Engineering</p>
-              <p><strong>Why This Challenge?: </strong>I chose this challenge since many of the resources currently available on covid-19 are very technical and hard for the everyday person to understand.</p>
+            <div class="col"></div>
+            <div class="col-md-8 team-member">
+              <h1 style="color: #8ccbbe">Shanti Mickens</h1>
             </div>
           </div>
         </div>
+        <div class="col-md-5" style="color: white;">
+          <div class="row">
+            <div class="col profile">
+              <div>
+                <p><strong>Grade: </strong>Incoming Freshman</p>
+                <p><strong>State: </strong>Idaho</p>
+                <p><strong>College: </strong>Massachusetts Institute of Technology</p>
+                <p><strong>Major: </strong>Computer Science and Engineering</p>
+                <p><strong>Why This Challenge?: </strong>I chose this challenge since many of the resources currently available on covid-19 are very technical and hard for the everyday person to understand.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
       </div>
 
       <!-- Isha Rajput -->
-      <div class="row" style="min-height: 300px;">
-        <div class="col-md-4 team-member" style="background-color: #8ccbbe;">
-          <h1>Isha Rajput</h1>
-          <!-- <div style="background-image: url('./images/shantim.jpg');"></div> -->
-        </div>
-        <div class="col-md-8">
+      <div class="row align-items-center" style="height: 300px;">
+        <div class="col-md-5 team-member" style="background-color: #8ccbbe; height: 300px;">
           <div class="row">
-            <div class="col profile" style="color: #3797a4">
-              <p><strong>Grade: </strong>Incoming Freshman</p>
-              <p><strong>State: </strong>California</p>
-              <p><strong>College: </strong>University of California, Los Angeles</p>
-              <p><strong>Major: </strong>Computer Science</p>
-              <p><strong>Why This Challenge?: </strong>I chose this challenge because I wanted to simplify data into something that is easy to visualize and understand.</p>
+            <div class="col"></div>
+            <div class="col-md-8 team-member">
+              <h1>Isha Rajput</h1>
             </div>
           </div>
         </div>
+        <div class="col-md-5">
+          <div class="row">
+            <div class="col profile" style="color: #3797a4">
+              <div>
+                <p><strong>Grade: </strong>Incoming Freshman</p>
+                <p><strong>State: </strong>California</p>
+                <p><strong>College: </strong>University of California, Los Angeles</p>
+                <p><strong>Major: </strong>Computer Science</p>
+                <p><strong>Why This Challenge?: </strong>I chose this challenge because I wanted to simplify data into something that is easy to visualize and understand.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
       </div>
 
-      <div class="row" style="min-height: 300px;">
-        <div class="col-md-4 team-member">
-          <h1 style="color: #8ccbbe">Calisa Xu Stevens</h1>
-          <!-- <div style="background-image: url('./images/shantim.jpg');"></div> -->
+      <!-- Calisa Xu Stevens -->
+      <div class="row align-items-center" style="background-color: #3797a4; height: 300px;">
+        <div class="col-md-5 team-member" style="background-color: white; height: 300px;">
+          <div class="row" style="height: 100%;">
+            <div class="col"></div>
+            <div class="col-md-8 team-member">
+              <h1 style="color: #8ccbbe">Calisa Xu Stevens</h1>
+            </div>
+          </div>
         </div>
-        <div class="col-md-8" style="background-color: #3797a4; color: white;">
+        <div class="col-md-5" style="background-color: #3797a4; color: white;">
           <div class="row">
             <div class="col profile">
-              <p><strong>Grade: </strong>Incoming Freshman</p>
-              <p><strong>State: </strong>Michigan</p>
-              <p><strong>College: </strong>Michigan State University</p>
-              <p><strong>Major: </strong>Computer Science</p>
-              <p><strong>Why This Challenge?: </strong></p>
+              <div>
+                <p><strong>Grade: </strong>Incoming Freshman</p>
+                <p><strong>State: </strong>Michigan</p>
+                <p><strong>College: </strong>Michigan State University</p>
+                <p><strong>Major: </strong>Computer Science</p>
+                <p><strong>Why This Challenge?: </strong></p>
+              </div>
             </div>
           </div>
         </div>
+        <div class="col-md-2"></div>
       </div>
 
-      <div class="row" style="min-height: 300px;">
-        <div class="col-md-4 team-member" style="background-color: #8ccbbe;">
-          <h1>Michael Tang</h1>
-          <!-- <div style="background-image: url('./images/shantim.jpg');"></div> -->
+      <!-- Michael Tang -->
+      <div class="row align-items-center" style="height: 300px;">
+        <div class="col-md-5 team-member" style="background-color: #8ccbbe; height: 300px;">
+          <div class="row" style="height: 100%;">
+            <div class="col"></div>
+            <div class="col-md-8 team-member">
+              <h1>Michael Tang</h1>
+            </div>
+          </div>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-5">
           <div class="row">
-            <div class="col profile" style="color: #3797a4">
-              <p><strong>Grade: </strong>Incoming Freshman</p>
-              <p><strong>State: </strong>California</p>
-              <p><strong>College: </strong>Princeton University</p>
-              <p><strong>Major: </strong>Undeclared</p>
-              <p><strong>Why This Challenge?: </strong></p>
+            <div class="col profile " style="color: #3797a4">
+              <div>
+                <p><strong>Grade: </strong>Incoming Freshman</p>
+                <p><strong>State: </strong>California</p>
+                <p><strong>College: </strong>Princeton University</p>
+                <p><strong>Major: </strong>Undeclared</p>
+                <p><strong>Why This Challenge?: </strong></p>
+              </div>
             </div>
+          </div>
+        </div>
+        <div class="col-md-2"> </div>
+      </div>
+
+      <!-- data -->
+      <div id="data-section" class="row section-heading" style="background-color: #fcf876;">
+        <div class="col-md-1"> </div>
+        <div class="col">
+          <div class="row align-items-center">
+            <h1>Data Sources</h1>
           </div>
         </div>
       </div>
 
-      <!-- <div class="row" style="height: 350px;;">
-        <div class="col" style="padding: 0px;">
-          <div class="col-md-4">
-            <h2 style="color: #3797a4;">Articles</h2>
-          </div>
+      <div class="row" style="height: 200px;">
+        <div class="col">
+          <p>add links to all data sources used w/ explanation of what they were used for</p>
         </div>
-      </div> -->
+      </div>
+
     </div>
+
+    <script type="text/javascript">
+
+      function scrollToHome() {
+        var my_element = document.getElementById("htmlwidget_container");
+        my_element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest"
+        });
+      }
+
+      function scrollToArticles() {
+        var my_element = document.getElementById("articles-section");
+        my_element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest"
+        });
+      }
+
+      function scrollToProject() {
+        var my_element = document.getElementById("project-section");
+        my_element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest"
+        });
+      }
+
+      function scrollToTeam() {
+        var my_element = document.getElementById("team-section");
+        my_element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest"
+        });
+      }
+
+      function scrollToData() {
+        var my_element = document.getElementById("data-section");
+        my_element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest"
+        });
+      }
+
+    </script>
 
     <html>
     <head>

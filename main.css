@@ -1,3 +1,8 @@
+
+html {
+  scroll-padding-top: 56px; /* height of sticky header */
+}
+
 .container-fluid {
   width: 100%;
 }
@@ -8,6 +13,16 @@
 
 .navbar-brand {
   color: #3797a4 !important;
+}
+
+.custom-nav-btn {
+  color: rgba(0,0,0,.5);
+  text-decoration: none;
+}
+
+.custom-nav-btn:hover {
+  color: rgba(0,0,0,.7);
+  text-decoration: none;
 }
 
 h2 {
@@ -45,13 +60,17 @@ h2 {
   transform: skew(0, -25deg);
 }
 
-.challenge-name {
+.section-heading {
   background-color: #fcf876;
   color: #7d7d7d;
   height: 100px;
   display: flex;
   align-items: center;
-  padding-left: 50px;
+  justify-content: center;
+}
+
+.section-heading div {
+  height: 100px;
 }
 
 .project-desc-arrow-down::after, .project-desc-arrow-down::before {
@@ -76,6 +95,7 @@ h2 {
 
 .profile {
   padding: 15px 15px 15px 30px;
+  display: flex;
 }
 
 .profile h2 {
@@ -108,6 +128,7 @@ h2 {
   justify-content: center;
   align-items: center;
   background-size: cover !important;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 }
 
 .team-member h1 {
@@ -144,5 +165,5 @@ h2 {
 }
 
 .section {
-  padding: 50px 100px 50px 30px;
+  padding: 50px 0px 80px 50px;
 }
