@@ -1,12 +1,18 @@
 
+/* global styles */
 html {
   scroll-padding-top: 56px; /* height of sticky header */
+}
+
+h2 {
+  margin-top: 10px;
 }
 
 .container-fluid {
   width: 100%;
 }
 
+/* navbar styling */
 .navbar {
   background-color: #ffffff !important;
 }
@@ -26,41 +32,7 @@ html {
   text-decoration: none;
 }
 
-h2 {
-  margin-top: 10px;
-}
-
-#map {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-.arrow-down {
-  color: white;
-}
-
-.map-info-arrow-down::after, .map-info-arrow-down::before {
-  position: absolute;
-  content: '';
-  width: 75px;
-  height: 75px;
-  background: #e4e4e4;
-  bottom: -0.5em;
-  z-index: 100;
-}
-
-.map-info-arrow-down::before {
-  right: 50%;
-  transform: skew(0, 25deg);
-}
-
-.map-info-arrow-down::after {
-  left: 50%;
-  transform: skew(0, -25deg);
-}
-
+/* project background description styling */
 .project-desc-arrow-down::after, .project-desc-arrow-down::before {
   position: absolute;
   content: '';
@@ -81,6 +53,7 @@ h2 {
   transform: skew(0, -25deg);
 }
 
+/* meet the team styling */
 .profile {
   padding: 15px 15px 15px 30px;
   display: flex;
@@ -101,20 +74,6 @@ h2 {
 .profile p {
   font-size: 16px;
   margin: 5px 0px;
-}
-
-.image-right {
-  padding: 0px;
-  float: right;
-  max-height: 300px;
-  clip-path: polygon(35% 0%, 100% 0%, 100% 100%, 15% 100%);
-}
-
-.image-left {
-  padding: 0px;
-  float: right;
-  max-height: 300px;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 25% 100%);
 }
 
 .team-member {
@@ -178,6 +137,7 @@ h2 {
     }
 }
 
+/* project description styling */
 .project-page {
   color: white;
 }
@@ -195,6 +155,7 @@ h2 {
   justify-content: center;
 }
 
+/* relevant articles styling */
 .article {
   padding: 20px;
   margin: 15px 0px;
@@ -218,8 +179,18 @@ h2 {
   margin-bottom: 5px;
 }
 
+/* data sources styling */
 .data-source {
   padding: 20px;
   margin: 15px 20px;
   border-radius: 10px;
+}
+
+/* source code link styling */
+.source-code-link h2 {
+  color: #7d7d7d;
+}
+
+.source-code-link:hover {
+  text-decoration-color: #7d7d7d;
 }
